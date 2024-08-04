@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <form >
+                <div>
+                    <input type="text" name="display" id="displays">
+                    </div>
+
+                    <div>
+                    <input type="button" value="AC"  id="buttons" onclick="display.value ='' " >
+                 <input type="button" value="DE"  id="buttons" onclick="display.value =display.value.tostring().slice(-1,0) " >
+                    <input type="button" value="."  id="buttons"  onclick="display.value +='.' ">
+                    <input type="button" value="/"  id="buttons" onclick="display.value +='/' ">
+                </div>
+
+                <div>
+                    <input type="button" value="7"  id="buttons"  onclick="display.value +='7' ">
+                    <input type="button" value="8"  id="buttons"  onclick="display.value +='8' ">
+                    <input type="button" value="9"  id="buttons"  onclick="display.value +='9' ">
+                    <input type="button" value="+"  id="buttons"  onclick="display.value +='+' ">
+                </div>
+
+                <div>
+                    <input type="button" value="4"  id="buttons"  onclick="display.value +='4' ">
+                    <input type="button" value="5"  id="buttons"  onclick="display.value +='5' ">
+                    <input type="button" value="6"  id="buttons"  onclick="display.value +='6' ">
+                    <input type="button" value="-"  id="buttons"  onclick="display.value +='-' ">
+                </div>
+                
+                <div>
+                    <input type="button" value="1"  id="buttons"  onclick="display.value +='1' ">
+                    <input type="button" value="2"  id="buttons"  onclick="display.value +='2' ">
+                    <input type="button" value="3"  id="buttons"  onclick="display.value +='3' ">
+                    <input type="button" value="*"  id="buttons"  onclick="display.value +='*' ">
+
+                    <div>
+                        <input type="button" value="00"  id="buttons"  onclick="display.value +='00' ">
+                        <input type="button" value="0"  id="buttons"  onclick="display.value +='0' ">
+                        <input type="button" value="."  id="buttons"  onclick="display.value ='.' ">
+                        <input type="button" value="="  id="buttons" >
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
